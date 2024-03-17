@@ -89,11 +89,32 @@ nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
-
 nav ul li a {
     color: var(--text-primary-color);
     font-weight: bold;
+    position: relative;
+    display: inline-block;
 }
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--btn-bg-secondary-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 
 .menu-icon {
     font-size: 30px;
@@ -1107,7 +1128,7 @@ ul {
         position: absolute;
         top: 50px;
         left: 0;
-        background: #353535;
+        background: var(--text-primary-color);
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
@@ -1121,7 +1142,7 @@ ul {
     }
 
     nav ul li a {
-        color: #fff;
+        color: var(--bg-primary-color);
         font-size: 20px;
     }
 
@@ -1290,11 +1311,6 @@ ul {
         margin: 0 20px;
     }
 
-    .logo {
-        height: 30px;
-        padding-left: 0px;
-    }
-
     .about-heading {
         font-size: 20px;
         line-height: 20px;
@@ -1439,5 +1455,13 @@ ul {
     .offer-container input[type="submit"] {
         height: 50px;
         width: 150px;
+    }
+}
+
+@media (max-width:340px)
+{
+    .logo {
+        height: 30px;
+        padding-left: 0px;
     }
 }
