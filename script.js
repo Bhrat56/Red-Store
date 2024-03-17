@@ -98,11 +98,15 @@ if (localStorage.getItem('dark-mode') === 'true') {
 }
 
 // Check if the user's operating system is in dark mode
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+// If the user's operating system is in dark mode, add the 'dark-mode' class to the body element
+if (darkModeQuery.matches) {
     body.classList.add('dark-mode');
     darkModeToggle.checked = true;
     logo.src = "images/logo-white.png";
     logo_1.src = "images/logo-white.png";
+    localStorage.setItem('dark-mode', 'true');
 }
 
 darkModeToggle.addEventListener('change', () => {
