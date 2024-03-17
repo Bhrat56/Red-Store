@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED STORE - PRODUCT FEATURE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+
+<body id="product"> 
+
+    <!-- ============== HEADER DESIGN =============== -->
+    <!-- header & navbar -->
+    <header class="header">
+        <div class="navbar">
+            <!-- logo for menu -->
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo.png" id="logo" height="40px" alt=""></a>
+            </div>
+            <!-- menu items list  -->
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="about.html#about1">About</a></li>
+                    <li><a href="services.html#services">Services</a></li>
+                    <li><a href="contact.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- menu icons -->
+            <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0" height="30px" width="30px"></i>
+            <div class="toggle-btn">
+                <input type="checkbox" id="checkbox" >
+                <label for="checkbox" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+            <div class="user"><a href="account.html"><i class='bx bxs-user'></i></a></div>
+            <div class="menu-icon" onclick="menutoggle()"><i class='bx bx-menu'></i></div>
+        </div>
+    </header>
+
+     <!-- ==== cart icon html ===== -->
+     <div class="cart">
+        <h2 class="cart-title">You Cart</h2>
+        <div class="cart-content">
+            
+        </div>
+        <hr>
+        <!-- total price -->
+        <div class="total">
+            <div class="total-title">Total </div>
+            <div class="total-price">$0</div>
+        </div>
+        <!-- Buttons for checkout-->
+        <button class="checkout-btn">CheckOut</button>
+        <i class="bx bx-x" id="close-cart"></i>
+    </div>
+
+    <!-- ============== Feature PAGE DESIGN =============== -->
+    <div class="product" id="product">
+        <div id="feature">
+            <!-- Featured product -->
+            <div class="small-container">
+                <h2 class="title">All Products</h2>
+                <div class="row row-2">
+                </div>
+                <div class="row">
+                    <!-- container for feature product col-4-->
+                    <div class="col-2">
+                        <!-- image col-4 -->
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh59l8RckAIwNa_lLizL6PXO9AGR2iiETfvM3pr0hjqVT-kCbGYTKNBv_vEYYRtaWUdXCFpj7Szj42Kh8OYedLQFFlYzDbDzdxu7mP2EqJ3cMjFcAFDLYhWuVD4YjlLWZgjr_fjQX14l0eg9oMN-IVrcgw5D2LDXkb70eN40fhM84599JzmuW8HY0nEvWyt/s320/product-2.jpg"
+                            class="product-img" alt="">
+                        <!-- tittle col-4 -->
+                        <h4 class="product-title">HRX Sports Shoes</h4>
+                        <!-- rrating col-4 -->
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <!-- price col-4 -->
+                        <p class="price">$70.00</p>
+                        <!-- button cla-4 -->
+                        <div class="add-cart" id="add-cart"> Add To Cart</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXXWzQP2i324TVEKYQshszBjhKqnvVZTO7UxrBOjPYoWXidwCNcLzEF4QueOpiKOO-cCtp3XNvelvem_K-m23wwVjtgIAPNrf9dHWcoVkM7oM2hXtW7wzeFax8zgsECb0ckO5WD-ysndZp5crlKkx9Ezconh64widMA6tYVPNOMnz4zDgh97gnh-qyg6yr/s320/product-8.jpg"
+                            class="product-img" alt="">
+                        <h4 class="product-title">Black Fossil Watch</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+
+                        </div>
+                        <p class="price">$100.00</p>
+                        <div class="add-cart" id="add-cart"> Add To Cart</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp3pV8-HtKDm22NGe3_V_VBpOhyJRWst1dkAcNhxCmRMSahMVj-ONMOechsqQAk1AEOZUZ2oHiV2OhMwWiVgFeP7KQcHtuNp9M14dZnisk57eYhvimb690bKD5sDOneDEG7ggQs8hZ8XfyvdHYP63EOY2NODrurhGUDt-WqA1hFmSeORiMX9OAnofNiAjF/s320/product-3.jpg"
+                            class="product-img" alt="">
+                        <h4 class="product-title">HRX Gray Trackpants</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+
+                        </div>
+                        <p class="price">$60.00</p>
+                        <div class="add-cart" id="add-cart" > Add To Cart</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNePNgokXPIjMnNzngs6ziNsDbU9MuKtjbfNfZa3rSQuGN4SfLbBb2TpGFYPozhydwzbZ_B01ZPHFwj-qqaCACEpF7ZTbR9NiqRbage_RjHNTV72rh0slGg_MwPOD5kFipVE9z_5Qm_uq08YuAzArNsqoael1Sh27Ahpzzl_SK4qxIU7FLa-7mlRQYIShn/s320/product-4.jpg"
+                            class="product-img" alt="">
+                        <h4 class="product-title">Blue Printed T-shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+
+                        </div>
+                        <p class="price">$80.00</p>
+                        <div class="add-cart" id="add-cart" > Add To Cart</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihmeqLEsuZE8Tfg1FyVO5wpZgOSI5hmP7w1yW_HXxxwkD8rW6DNOkW5FeLRd45lbXbhaljN70S6QN1gPlacAy24uGHP-GtSkj7uPp5VgVQ6C8BxSanuoQuIHdAfKDLUFFJ6hr7lc4kkpN1Rw-aUjWAkMQS8wuFjpvTMABCjYPRFm9B2BUmR_h6xkBklUpB/s320/product-5.jpg"
+                            class="product-img" alt="">
+                        <h4 class="product-title">Puma Gray Sports Shoes</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+
+                        </div>
+                        <p class="price">$89.00</p>
+                        <div class="add-cart" id="add-cart" > Add To Cart</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhofBRQPKlu6m1qsAqWVIUvb4koW7j8eGSB7c_4ZanhlYJZHK4XGvCe_UpR-aVZxTleGXrbEh2npQ-8qtP38Zoj65OUnCBWHs3NU07p0MjWmivLxWkIsHtdWBU_NS-zOvo1md2BIsPn3opykWF6r49wHcfuLVTUeiSIJoVy_OudGHONoy4_7SLaOPwnDttB/s320/product-6.jpg"
+                            class="product-img" alt="">
+                        <h4 class="product-title">Black Printed T-shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+
+                        </div>
+                        <p class="price">$65.00</p>
+                        <div class="add-cart" id="add-cart"> Add To Cart</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip_aPimDL99_okz6ZYywYEvB3YCmg_IFhAmCHPiLlm0FD8xdbuU2VVWNed_t5wJGB-FVdc8VP394PqhkFywaQ9m-oaK5mK_EVVgrgjFCtL7jxXGA5c_9Ug4uyG5AR6keIUG3gba7XploQ0ueZP_v_OUfJmaPu3cs0NTeafr_IiMfIO1mkVsuvN_G8DNpSt/s320/product-7.jpg"
+                            class="product-img" alt="">
+                        <h4 class="product-title">HRX Set Of 3 Socks</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+
+                        </div>
+                        <p class="price">$54.00</p>
+                        <div class="add-cart" id="add-cart" > Add To Cart</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZhfzJPnqH49gFynOY2fuam53mcG7zs-DjeZjIPhyphenhyphenrKe8cR6erXDJ23MuYIzt6WDEqgaCETM-XbabQy0fJeCHShNWmU3rWmCjyFV2XQ95RSMgACQPwQfPdfb3hMjYsfK7p-gv56u12iXS3aobQDZiOCnmR6moSbjm3oLFW4YMH800SSCWpXfK2ejgNwYLc/s320/product-10.jpg"
+                            class="product-img" alt="">
+                        <h4 class="product-title">Black HRX Shoes</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p class="price">$100.00</p>
+                        <div class="add-cart" id="add-cart" > Add To Cart</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQdJMv1XWZJbUNNCMhgPDKsYWuj2J-DTmUpT8PdNpofvRPIOAcD766OJeK7-Kk0C4gcbyIGf3tetC_O_PB1pJg2Ej_1-iyZCnmS9GbDmYUL-Opz0L5zhzjBFBF02vnzL8CjR_dmHMbA4sdF-nVqC3EpgWo-gnrz1nsvLpqw6bwfBrbyu63tABnWTAvh_JW/s320/product-11.jpg"
+                            class="product-img" alt="">
+                        <h4 class="product-title">Gray HRX Shoes</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p class="price">$66.00</p>
+                        <div class="add-cart" id="add-cart" style="cursor: pointer;"> Add To Cart</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQuPsHSjM8HkhVj6nnkGQ7XclYBWG9LCT33v6c71ANdyltyW0BCOGCGUD3Oohag5NhqB-QKmf89uB_v2SsIetRScq06DXEs2FMdOTs_KjUtbTC2V2sLjZp-mvfnf1UzzEQeVn5VdtPRrDcgxXM_gOpbAb38BYf87h1NvZ6RfJp83oQf8bFtrtv-D6auPRs/s320/product-9.jpg"
+                            class="product-img" alt="">
+                        <h4 class="product-title">Black SportX Watch</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+    
+                        </div>
+                        <p class="price">$45.00</p>
+                        <div class="add-cart" id="add-cart"> Add To Cart</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtfFdjEr0fKK4B8v-fehIPOJ_c12wt3qhWmu8hbQVhBv6tmouvHUGjXzAi16tDd2GeSivNt3Bq1okAoA6WoivZc4TqjGkVmkCbaZgVJANpzLQUt4otEaLMnNQHF6-5k5cx8Hxykhb-fDmNZz7BVO07hSRKkAuZkco-qLAd3_nkvJoudrHPLf53ZLCiJYna/s320/product-12.jpg"
+                            class="product-img" alt="">
+                        <h4 class="product-title">HRX Black Trackpants</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+    
+                        </div>
+                        <p class="price">$52.00</p>
+                        <div class="add-cart" id="add-cart"> Add To Cart</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWeC6x1z5NwaCb3zfZjTyNR7npAdqK81l8B0kOjtsxMzH29wZSnGGWeauuQEbQetZNFXJPm2V53VqePH2gDaUKT2Qq38G8Q6GWQM4DbnyteHwrFWathBeovzRRk0BmXEFJq7l8yX284kM_46k4WM47YFArg9p-MmJpvuoMnc7mPvKnt9OZCgFylzmaoyjD/s320/product-1.jpg"
+                            class="product-img" alt="">
+                        <h4 class="product-title">Red Printed T-shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+    
+                        </div>
+                        <p class="price">$80.00</p>
+                        <div class="add-cart" id="add-cart"> Add To Cart</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- ============= Fotter page design ================ -->
+
+    <!-- footer design -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- footer col-1 for details pages links in a file -->
+                <div class="footer-col-1">
+                    <img src="images/play-store.png" class="footer-img1" alt="">
+                    <img src="images/app-store.png" class="footer-img2" alt="">
+                </div>
+                <!-- footer col-2 for email and social media links pages links in a file -->
+                <div class="footer-col-2">
+                    <img src="images/logo.png" id="logo-1" alt="">
+                    <h3>E-mail</h3>
+                    <form class="form1">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="email" placeholder="Enter your email id" class="input1" required>
+                        <button type="submit"><i class='bx bxs-right-arrow-alt'></i></button>
+                    </form>
+                    <div class="social-icon">
+                        <a href="#"> <i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+
+                </div>
+                <!-- footer col-3 for other pages links in a file -->
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="about.html#about1">About</a></li>
+                    <li><a href="services.html#services">Services</a></li>
+                    <li><a href="contact.html#contact">Contact Us</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    </ul>
+                </div>
+                <!-- footer col-4 for social media links in a file -->
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- copyright and line at bottom -->
+            <hr>
+            <p class="powerdby">Powered By &copy; Bharat Gambhir</p>
+        </div>
+    </div>
+
+    <!-- javascript file attachment -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

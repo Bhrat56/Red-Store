@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED STORE - HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ============== Header Part ============= -->
+    <!-- header & navbar -->
+    <header class="header">
+        <div class="navbar">
+            <!-- logo for menu -->
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo.png" id="logo" height="40px" alt=""></a>
+            </div>
+            <!-- menu items list  -->
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="product.html#product">Product</a></li>
+                    <li><a href="about.html#about1">About</a></li>
+                    <li><a href="services.html#services">Services</a></li>
+                    <li><a href="contact.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- menu icons , dark mode and light mode and shopping cart -->
+            <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0" height="30px" width="30px"></i>
+            <div class="toggle-btn">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+            <div class="user"><a href="account.html"><i class='bx bxs-user'></i></a> </div>
+            <div class="menu-icon" onclick="menutoggle()"><i class='bx bx-menu'></i></div>
+        </div>
+    </header>
+    <!-- ==== cart icon html ===== -->
+    <div class="cart">
+        <h2 class="cart-title">You Cart</h2>
+        <div class="cart-content">
+            
+        </div>
+        <hr>
+        <!-- total price -->
+        <div class="total">
+            <div class="total-title">Total </div>
+            <div class="total-price">$0</div>
+        </div>
+        <!-- Buttons for checkout-->
+        <button class="checkout-btn">CheckOut</button>
+        <i class="bx bx-x" id="close-cart"></i>
+    </div>
+    <!-- === main body content === -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/gallery-1.jpg" class="product-img" id="large-img" alt="">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/gallery-1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-4.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home /T-shirt</p>
+                <h1 class="product-title">Red Printed T-Shirt by HRX</h1>
+                <h4 class="price">$50.50</h4>
+                <input type="number" value="1">
+                <div class="add-cart" id="add-cart" style="cursor: pointer;"> Add To Cart</div>
+                <h3>Product Details <i class="bx bx-right-indent"></i></h3>
+                <br>
+                <p>Give your summer wardrobe a style upgrade with the HRX
+                    <br>Men's Active T-shirt. Team it with a pair of shorts for
+                    your morning<br> workout or a denims for an evening out with
+                    the guys.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ==== product detail ==== -->
+    <div class="product-description">
+        <div class="row row-3">
+            <h2>Product Description </h2>
+            <span id="showmore" onclick="show()">Show More</span><span id="showless" onclick="less()">Show
+                Less</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum quo possimus qui saepe magni
+            doloribus excepturi reprehenderit odit velit a, nesciunt in dignissimos beatae necessitatibus omnis
+            repellendus ut ipsum eaque culpa totam molestiae adipisci vel suscipit! Quisquam sint nisi
+            voluptatem sunt.<span id="seemore"> Illo iure fugit ipsam eius recusandae necessitatibus. Voluptatem
+                ut eius, repellendus odio rem quo, corporis error nisi adipisci quasi vel ipsam consequatur
+                soluta! Aut nesciunt error ab cupiditate? Eaque illum laboriosam non animi dolor aliquam
+                sapiente est eius porro mollitia voluptatem voluptates veritatis accusantium nostrum quae, sunt
+                facere ipsa laborum consequatur! Nobis numquam tempore ipsum, corporis adipisci commodi
+                assumenda repellat atque perferendis ratione voluptatem laudantium at debitis corrupti enim
+                libero aliquam perspiciatis maiores minus quaerat autem? Quam tempora dolorem quibusdam animi
+                nesciunt quidem quos nulla quisquam reprehenderit nisi magnam, natus consectetur voluptatum
+                harum? Et unde voluptatum praesentium pariatur, doloribus fugiat mollitia ad id voluptas
+                voluptatem quaerat natus distinctio quia. Reiciendis velit deleniti odit nostrum voluptas
+                laborum, aspernatur perspiciatis sint hic iure porro voluptatibus a facilis sapiente. Sint, id
+                repellat dicta magni iste reprehenderit non tenetur ut, ea eius maiores est? Magni nobis unde
+                animi distinctio aut molestiae officia, placeat eligendi optio id nulla pariatur minima sit
+                repellat dolor?</span></p>
+    </div>
+    <!---title- -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <a href="">View More</a>
+        </div>
+    </div>
+    <div id="feature">
+        <!-- Featured product -->
+        <div class="small-container">
+
+            <div class="row">
+                <!-- container for feature product col-4-->
+                <div class="col-4">
+                    <!-- image col-4 -->
+                    <img src="images/product-1.jpg" class="product-img" alt="">
+                    <!-- tittle col-4 -->
+                    <h4 class="product-title">Red Printed T-shirt1</h4>
+                    <!-- rrating col-4 -->
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <!-- price col-4 -->
+                    <p class="price">$50.00</p>
+                    <!-- button cla-4 -->
+                    <div class="add-cart" id="add-cart" style="cursor: pointer;"> Add To Cart</div>
+                </div>
+                <div class="col-4">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh59l8RckAIwNa_lLizL6PXO9AGR2iiETfvM3pr0hjqVT-kCbGYTKNBv_vEYYRtaWUdXCFpj7Szj42Kh8OYedLQFFlYzDbDzdxu7mP2EqJ3cMjFcAFDLYhWuVD4YjlLWZgjr_fjQX14l0eg9oMN-IVrcgw5D2LDXkb70eN40fhM84599JzmuW8HY0nEvWyt/s320/product-2.jpg"
+                        class="product-img" alt="">
+                    <h4 class="product-title">Red Printed T-shirt 2</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+
+                    </div>
+                    <p class="price">$50.00</p>
+                    <div class="add-cart" id="add-cart" style="cursor: pointer;"> Add To Cart</div>
+                </div>
+                <div class="col-4">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp3pV8-HtKDm22NGe3_V_VBpOhyJRWst1dkAcNhxCmRMSahMVj-ONMOechsqQAk1AEOZUZ2oHiV2OhMwWiVgFeP7KQcHtuNp9M14dZnisk57eYhvimb690bKD5sDOneDEG7ggQs8hZ8XfyvdHYP63EOY2NODrurhGUDt-WqA1hFmSeORiMX9OAnofNiAjF/s320/product-3.jpg"
+                        class="product-img" alt="">
+                    <h4 class="product-title">Red Printed T-shirt 3</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+
+                    </div>
+                    <p class="price">$50.00</p>
+                    <div class="add-cart" id="add-cart" style="cursor: pointer;"> Add To Cart</div>
+                </div>
+                <div class="col-4">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNePNgokXPIjMnNzngs6ziNsDbU9MuKtjbfNfZa3rSQuGN4SfLbBb2TpGFYPozhydwzbZ_B01ZPHFwj-qqaCACEpF7ZTbR9NiqRbage_RjHNTV72rh0slGg_MwPOD5kFipVE9z_5Qm_uq08YuAzArNsqoael1Sh27Ahpzzl_SK4qxIU7FLa-7mlRQYIShn/s320/product-4.jpg"
+                        class="product-img" alt="">
+                    <h4 class="product-title">Red Printed T-shirt 4</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+
+                    </div>
+                    <p class="price">$50.00</p>
+                    <div class="add-cart" id="add-cart" style="cursor: pointer;"> Add To Cart</div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- ============= Fotter page design ================ -->
+
+    <!-- footer design -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- footer col-1 for details pages links in a file -->
+                    <div class="footer-col-1">
+                        <img src="images/play-store.png" class="footer-img1" alt="">
+                        <img src="images/app-store.png" class="footer-img2" alt="">
+                    </div>
+                    <!-- footer col-2 for email and social media links pages links in a file -->
+                    <div class="footer-col-2">
+                        <img src="images/logo.png" id="logo-1" alt="">
+                        <h3>E-mail</h3>
+                        <form class="form1" id="form1">
+                            <i class='bx bxs-envelope'></i>
+                            <input type="email" placeholder="Enter your email id" class="input1" id="email1" required>
+                            <button type="submit"><i class='bx bxs-right-arrow-alt'></i></button>
+                        </form>
+                        <div class="social-icon">
+                            <a href="#"> <i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                        </div>
+
+                    </div>
+                    <!-- footer col-3 for other pages links in a file -->
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="product.html#product">Product</a></li>
+                            <li><a href="about.html#about1">About</a></li>
+                            <li><a href="services.html#services">Services</a></li>
+                            <li><a href="contact.html#contact">Contact Us</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </div>
+                    <!-- footer col-4 for social media links in a file -->
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- copyright and line at bottom -->
+                <hr>
+                <p class="powerdby ">Powered By &copy; Bharat Gambhir</p>
+            </div>
+        </div>
+    </footer>
+    <!-- script tag for linking  the javascript files to html-->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

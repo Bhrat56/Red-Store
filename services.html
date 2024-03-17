@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RED STORE - SERVICES PAGE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="navbar">
+      <!-- logo for menu -->
+      <div class="logo">
+        <a href="index.html"> <img src="images/logo.png" id="logo" height="40px" alt=""></a>
+      </div>
+      <!-- menu items list  -->
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="product.html#product">Product</a></li>
+          <li><a href="about.html#about1">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="contact.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- menu icons -->
+      <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0" height="30px" width="30px"></i>
+      <div class="toggle-btn">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="toggle-label">
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
+      <div class="user"><a href="account.html"><i class='bx bxs-user'></i></a></div>
+      <div class="menu-icon" onclick="menutoggle()"><i class='bx bx-menu'></i></div>
+    </div>
+  </header>
+  <!-- ==== cart icon html ===== -->
+  <div class="cart">
+    <h2 class="cart-title">You Cart</h2>
+    <div class="cart-content">
+
+    </div>
+    <hr>
+    <!-- total price -->
+    <div class="total">
+      <div class="total-title">Total </div>
+      <div class="total-price">$0</div>
+    </div>
+    <!-- Buttons for checkout-->
+    <button class="checkout-btn">CheckOut</button>
+    <i class="bx bx-x" id="close-cart"></i>
+  </div>
+
+  <main>
+    <!-- ============== services page ============== -->
+    <section class="collection" id="services">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="content swiper-slide">
+            <img
+              src="images/customer-support.png"
+              alt="">
+            <div class="text-content">
+              <h3>Customer Support</h3>
+              <p>Our Customer Support team provides timely, efficient, and personalized assistance to ensure your satisfaction and resolve any issues promptly.</p>
+              <button class="services-btn">Read more</button>
+            </div>
+          </div>
+          <div class="content swiper-slide">
+            <img
+              src="images/Untitled design.png"
+              alt="">
+            <div class="text-content">
+              <h3>24 X 7 Support</h3>
+              <p>support ensures round-the-clock assistance, resolving queries promptly and ensuring uninterrupted service for our valued customers.</p>
+              <button class="services-btn">Read more</button>
+            </div>
+          </div>
+          <div class="content swiper-slide">
+            <img
+              src="images/replacement.png"
+              alt="">
+            <div class="text-content">
+              <h3>No Question Replacement</h3>
+              <p>Replacement: Our hassle-free process ensures quick and efficient replacement of any defective or damaged items, ensuring customer satisfaction. 626*455</p>
+              <button class="services-btn">Read more</button>
+            </div>
+          </div>
+          <div class="content swiper-slide">
+            <img
+              src="images/refund.png"
+              alt="">
+            <div class="text-content">
+              <h3>Refund Support</h3>
+              <p>Our Refund Support: Hassle-free, prompt processing for refunds, ensuring customer satisfaction and confidence in our services.</p>
+              <button class="services-btn">Read more</button>
+            </div>
+          </div>
+          <div class="content swiper-slide">
+            <img
+              src="images/money-back.png"
+              alt="">
+            <div class="text-content">
+              <h3>Money Back Guarantee</h3>
+              <p>
+                Our Money Back Guarantee ensures a full refund if you're not completely satisfied with your purchase within 30 days.</p>
+              <button class="services-btn">Read more</button>
+            </div>
+          </div>
+          <div class="content swiper-slide">
+            <img
+              src="images/warranty.png"
+              alt="">
+            <div class="text-content">
+              <h3>Warranty</h3>
+              <p>Our warranty ensures peace of mind, covering defects in materials and workmanship for 1 Year. Details available upon request</p>
+              <button class="services-btn">Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-btn">
+          <button class="prev-btn">Prev</button>
+          <span class="pagination"></span>
+          <button class="next-btn">Next</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ============= Fotter page design ================ -->
+  <!-- footer design -->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- footer col-1 for details pages links in a file -->
+          <div class="footer-col-1">
+            <img src="images/play-store.png" class="footer-img1" alt="">
+            <img src="images/app-store.png" class="footer-img2" alt="">
+          </div>
+          <!-- footer col-2 for email and social media links pages links in a file -->
+          <div class="footer-col-2">
+            <img src="images/logo.png" id="logo-1" alt="">
+            <h3>E-mail</h3>
+            <form class="form1">
+              <i class='bx bxs-envelope'></i>
+              <input type="email" placeholder="Enter your email id" class="input1" required>
+              <button type="submit"><i class='bx bxs-right-arrow-alt'></i></button>
+            </form>
+            <div class="social-icon">
+              <a href="#"> <i class='bx bxl-facebook'></i></a>
+              <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+              <a href="#"><i class='bx bxl-twitter'></i></a>
+              <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+
+          </div>
+          <!-- footer col-3 for other pages links in a file -->
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="product.html#product">Product</a></li>
+              <li><a href="about.html#about1">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="contact.html#contact">Contact Us</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </div>
+          <!-- footer col-4 for social media links in a file -->
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <!-- copyright and line at bottom -->
+        <hr>
+        <p class="powerdby"> Powered By &copy; Bharat Gambhir</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

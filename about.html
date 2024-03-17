@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED STORE -  Products</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- ============== HEADER DESIGN =============== -->
+    <!-- header & navbar -->
+    <header class="header">
+        <div class="navbar">
+            <!-- logo for menu -->
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo.png" id="logo" height="40px" alt=""></a>
+            </div>
+            <!-- menu items list  -->
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html#home-user">Home</a></li>
+                    <li><a href="product.html#product">Product</a></li>
+                    <li><a href="#about1">About</a></li>
+                    <li><a href="services.html#service">Services</a></li>
+                    <li><a href="contact.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- menu icons -->
+            <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0" height="30px" width="30px"></i>
+            <div class="toggle-btn">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+            <div class="user"><a href="account.html"><i class='bx bxs-user'></i></a> </div>
+            <div class="menu-icon" onclick="menutoggle()"><i class='bx bx-menu'></i></div>
+        </div>
+    </header>
+
+     <!-- ==== cart icon html ===== -->
+     <div class="cart">
+        <h2 class="cart-title">You Cart</h2>
+        <div class="cart-content">
+            
+        </div>
+        <hr>
+        <!-- total price -->
+        <div class="total">
+            <div class="total-title">Total </div>
+            <div class="total-price">$0</div>
+        </div>
+        <!-- Buttons for checkout-->
+        <button class="checkout-btn">CheckOut</button>
+        <i class="bx bx-x" id="close-cart"></i>
+    </div>
+
+    <!-- ============= About Page Design ================ -->
+
+    <main>
+        <section class="about" id="about1">
+            <div class="box">
+
+                <div class="col-4">
+                    <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNwb3J0cyUyMHNob2VzfGVufDB8fDB8fHww"
+                    
+                        alt="infrastucture">
+                </div>
+                <div class="col-4">
+                    <div class="about-description">
+                        <h1 class="about-heading">Our Product <span class="">Quality !</span></h1>
+                        <p>Our product stands out due to its unparalleled quality, meticulously crafted with the finest materials and attention to detail. Each component is carefully selected to ensure durability, functionality, and aesthetic appeal. Our commitment to excellence is evident in every aspect of the product, providing customers with a superior experience and long-lasting satisfaction.</p>
+                        <a href="" class="about-btn">View More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about2">
+            <div class="box">
+
+                <div class="col-4">
+                    <img src="https://www.bobswatches.com/rolex-blog/wp-content/uploads/2017/01/Green-Gold-Rolex-GMT-Master.jpg"
+                        alt="infrastucture">
+                </div>
+                <div class="col-4">
+                    <div class="about-description">
+                        <h1 class="about-heading">Premium <span>Products !</span></h1>
+                        <p>Our best Premium Products are meticulously crafted with superior materials, cutting-edge technology, and exquisite attention to detail. Each item embodies luxury, durability, and timeless elegance, making them a symbol of refined taste and sophistication. Elevate your lifestyle with our premium collection and experience unparalleled quality and style like never before.</p>
+                        <a href="" class="about-btn">View More</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about3">
+            <div class="box">
+
+                <div class="col-4">
+                    <img src="https://base22.com/wp-content/uploads/2021/06/Blogpost_Cloud_Digital_Infrastructure_1024x683.png"
+                        alt="infrastucture">
+                </div>
+                <div class="col-4">
+                    <div class="about-description">
+                        <h1 class="about-heading">Our <span>Infrastucture !</span></h1>
+                        <p>Our Infrastructure boasts state-of-the-art facilities designed to optimize efficiency and productivity. With advanced technology and modern amenities, we ensure a seamless workflow and top-notch services. Our well-maintained infrastructure enables us to deliver high-quality results consistently, meeting the diverse needs of our clients and exceeding industry standards.</p>
+                        <a href="" class="about-btn">View More</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- ============= Fotter page design ================ -->
+    <!-- footer design -->
+    <footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- footer col-1 for details pages links in a file -->
+                <div class="footer-col-1">
+                    <img src="images/play-store.png" class="footer-img1" alt="">
+                    <img src="images/app-store.png" class="footer-img2" alt="">
+                </div>
+                <!-- footer col-2 for email and social media links pages links in a file -->
+                <div class="footer-col-2">
+                    <img src="images/logo.png" id="logo-1" alt="">
+                    <h3>E-mail</h3>
+                    <form class="form1">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="email" placeholder="Enter your email id" class="input1" required>
+                        <button type="submit"><i class='bx bxs-right-arrow-alt'></i></button>
+                    </form>
+                    <div class="social-icon">
+                        <a href="#"> <i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+
+                </div>
+                <!-- footer col-3 for other pages links in a file -->
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="index.html#home-user">Home</a></li>
+                        <li><a href="product.html#product">Product</a></li>
+                        <li><a href="#about1">About</a></li>
+                        <li><a href="services.html#service">Services</a></li>
+                        <li><a href="contact.html#contact">Contact Us</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </div>
+                <!-- footer col-4 for social media links in a file -->
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- copyright and line at bottom -->
+            <hr>
+            <p class="powerdby">Powered By &copy; Bharat Gambhir</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- javascript file attachment -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

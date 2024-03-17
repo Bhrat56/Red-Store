@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RED STORE - ACCOUNT</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- ============== Header Part ============= -->
+	<!-- header & navbar -->
+	<header class="header">
+		<div class="navbar">
+			<!-- logo for menu -->
+			<div class="logo">
+				<a href="index.html"> <img src="images/logo.png" id="logo" height="40px" alt=""></a>
+			</div>
+			<!-- menu items list  -->
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index.html#home">Home</a></li>
+					<li><a href="product.html#product">Product</a></li>
+					<li><a href="about.html#about1">About</a></li>
+					<li><a href="services.html#services">Services</a></li>
+					<li><a href="contact.html#contact">Contact Us</a></li>
+				</ul>
+			</nav>
+			<!-- menu icons , dark mode and light mode and shopping cart -->
+			<i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0" height="30px" width="30px"></i>
+			<div class="toggle-btn">
+				<input type="checkbox" id="checkbox">
+				<label for="checkbox" class="toggle-label">
+					<span class="toggle-ball"></span>
+				</label>
+			</div>
+			 <div class="user"><a href="account.html"><i class='bx bxs-user'></i></a></div>
+			<div class="menu-icon" onclick="menutoggle()"><i class='bx bx-menu'></i></div>
+		</div>
+	</header>
+	<!-- ==== cart icon html ===== -->
+	<div class="cart">
+		<h2 class="cart-title">You Cart</h2>
+		<div class="cart-content">
+
+		</div>
+		<hr>
+		<!-- total price -->
+		<div class="total">
+			<div class="total-title">Total </div>
+			<div class="total-price">$0</div>
+		</div>
+		<!-- Buttons for checkout-->
+		<button class="checkout-btn">CheckOut</button>
+		<i class="bx bx-x" id="close-cart"></i>
+	</div>
+	<!-- === main body content === -->
+	<main>
+		<div class="account-page">
+				<div class="account-container">
+					<!--  account details -->
+					<div class="form-container">
+						<div class="form-btn">
+							<span onclick="login()"> Login</span>
+							<span onclick="register()">Register</span>
+							<hr id="Indicator">
+						</div>
+						<form class="account-form" id="login-form">
+							<input type="text" placeholder="Username">
+							<input type="password" placeholder="Password">
+							<button type="submit" class="account-btn"> Login</button>
+							
+							<!-- <span> <input type="checkbox" > </span><span>Remember me </span> -->
+							<a href="">Forgot password</a>
+						</form>
+						<form class="account-form" id="register-form">
+							<input type="text" placeholder="Username">
+							<input type="email" placeholder="E-Mail">
+							<input type="password" placeholder="Password">
+							<button type="submit" class="account-btn">Register</button>
+						</form>
+
+					</div>
+				</div>
+		</div>
+
+	</main>
+	<!-- ============= Fotter page design ================ -->
+
+	<!-- footer design -->
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<!-- footer col-1 for details pages links in a file -->
+					<div class="footer-col-1">
+						<img src="images/play-store.png" class="footer-img1" alt="">
+						<img src="images/app-store.png" class="footer-img2" alt="">
+					</div>
+					<!-- footer col-2 for email and social media links pages links in a file -->
+					<div class="footer-col-2">
+						<img src="images/logo.png" id="logo-1" alt="">
+						<h3>E-mail</h3>
+						<form class="form1">
+							<i class='bx bxs-envelope'></i>
+							<input type="email" placeholder="Enter your email id" class="input1" required>
+							<button type="submit"><i class='bx bxs-right-arrow-alt'></i></button>
+						</form>
+						<div class="social-icon">
+							<a href="#"> <i class='bx bxl-facebook'></i></a>
+							<a href="#"><i class='bx bxl-instagram-alt'></i></a>
+							<a href="#"><i class='bx bxl-twitter'></i></a>
+							<a href="#"><i class='bx bxl-whatsapp'></i></a>
+						</div>
+
+					</div>
+					<!-- footer col-3 for other pages links in a file -->
+					<div class="footer-col-3">
+						<h3>Useful Links</h3>
+						<ul>
+							<li><a href="index.html#home">Home</a></li>
+							<li><a href="product.html#product">Product</a></li>
+							<li><a href="about.html#about1">About</a></li>
+							<li><a href="services.html#services">Services</a></li>
+							<li><a href="contact.html#contact">Contact Us</a></li>
+							<li><a href="account.html">Account</a></li>
+						</ul>
+					</div>
+					<!-- footer col-4 for social media links in a file -->
+					<div class="footer-col-4">
+						<h3>Follow us</h3>
+						<ul>
+							<li>Facebook</li>
+							<li>Twitter</li>
+							<li>Instagram</li>
+							<li>YouTube</li>
+						</ul>
+					</div>
+				</div>
+				<!-- copyright and line at bottom -->
+				<hr>
+				<p class="powerdby ">Powered By &copy; Bharat Gambhir</p>
+			</div>
+		</div>
+	</footer>
+	<!-- script tag for linking  the javascript files to html-->
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
