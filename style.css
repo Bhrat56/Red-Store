@@ -386,7 +386,7 @@ nav ul li a::after {
 
 .add-cart {
     margin-top: 20px;
-    padding: 8px;
+    padding: 10px 20px;
     background-color: var(--btn-bg-primary-color);
     color: var(--btn-text-primary-color);
     display: inline-block;
