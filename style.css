@@ -417,6 +417,10 @@ nav ul li a::after {
     height: 100%;
 }
 
+.add-cart:hover{
+    box-shadow:0 0 1rem var(--btn-bg-primary-color)
+}
+
 .title {
     text-align: center;
     margin: 20px;
