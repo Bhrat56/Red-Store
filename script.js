@@ -523,8 +523,7 @@ function readmore6() {
     Having a warranty in place can significantly benefit consumers by protecting their investment, ensuring product reliability, and providing recourse in case of unexpected issues. It instills trust in the brand or manufacturer and demonstrates their commitment to customer satisfaction and product quality. As such, warranties play a crucial role in fostering positive relationships between businesses and consumers while promoting confidence in the marketplace.`;
 }
 
-let readmoreclose = document.getElementById("close-more");
-    readmoreclose = onclick = () => {
+     function readclose(){
     document.getElementById('services-main').style.display = "block";
      document.getElementById('readmore').style.display = "none";
 };
