@@ -423,11 +423,7 @@ let readheading4 = `Refund Support`;
 let readheading5 = `Money Back Guarantee`;
 let readheading6 = `Warranty`;
 
-function servicelink()
-{
-    document.getElementById('services-main').style.display = "block";
-    document.getElementById('readmore').style.display = "none";
-}
+
 
 function readmore1() {
     document.getElementById('services-main').style.display = "none";
@@ -442,6 +438,12 @@ function readmore1() {
     Moreover, our customer support representatives are extensively trained and equipped with in-depth knowledge about our products or services. This enables them to provide accurate information, offer personalized solutions, and guide customers through any challenges they may encounter. We believe in proactive communication and strive to address customer concerns proactively, demonstrating our commitment to excellent service.
     <br><br>
     Furthermore, we understand that each customer interaction is an opportunity to build trust and loyalty. Our customer support team is not only focused on resolving immediate issues but also on building meaningful relationships with our customers. We listen attentively to their feedback, incorporate suggestions for improvement, and continuously strive to enhance our services based on customer insights.`;
+}
+
+function servicelink()
+{
+    document.getElementById('services-main').style.display = "block";
+    document.getElementById('readmore').style.display = "none";
 }
 function readmore2() {
     document.getElementById('services-main').style.display = "none";
