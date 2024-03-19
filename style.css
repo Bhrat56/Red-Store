@@ -1215,6 +1215,15 @@ ul {
     align-items: center;
 }
 
+#close-more {
+    top: 10px;
+    right: 8px;
+    color: #fff;
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 .read{
 
     background-color: transparent;
