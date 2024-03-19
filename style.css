@@ -1146,6 +1146,94 @@ ul {
     transition: all 1s;
 }
 
+/* ========= view more page design ========== */
+.viewmore{
+    background: url("https://static-cdn.jtvnw.net/jtv_user_pictures/2c565bcb-4358-4b46-9d2a-4ebbde185ff8-profile_banner-480.jpeg") no-repeat fixed center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view{
+    /* min-height: 500px;
+    min-width: 1080px; */
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(50px);
+    padding: 30px;
+    margin: 80px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    position: relative;
+    /* text-align: center; */
+    overflow:  scroll;
+}
+
+
+.view-heading{
+    font-size: 20px;
+}
+
+.view-heading{
+    font-size: 50px;
+    color: var(--text-primary-color);
+    display: inline-block;
+}
+
+#view-span{
+     color: var(--btn-bg-secondary-color);
+     display: inline-block;
+     font-size: 50px;
+     font-weight: bold;
+     margin-bottom: 20px;
+     margin-left: 10px;
+}
+
+.view-all-heading
+{
+    text-align: center;
+}
+
+#viewmore{
+    display: none;
+}
+
+/* ========= Read more page design ========== */
+.readmore{
+    background: url("https://static-cdn.jtvnw.net/jtv_user_pictures/2c565bcb-4358-4b46-9d2a-4ebbde185ff8-profile_banner-480.jpeg") no-repeat fixed center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.read{
+
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(50px);
+    padding: 30px;
+    margin: 80px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    position: relative;
+    overflow:  scroll;
+}
+
+.read-heading{
+    font-size: 50px;
+    color: var(--btn-bg-secondary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#readmore{
+    display: none;
+} 
+
 /* ========  Mobile View ========== */
 
 @media (max-width:866px) {
