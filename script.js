@@ -414,6 +414,10 @@ function viewmore3() {
     document.querySelector(".view-parg").innerHTML = viewparg3;
 }
 
+     function viewclose(){
+    document.getElementById('about-main').style.display = "block";
+     document.getElementById('Viewmore').style.display = "none";
+};
 // ============ service page functions =======================
 
 let readheading1 = `Customer Support`;
