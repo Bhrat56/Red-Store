@@ -1178,8 +1178,12 @@ ul {
 
 .view-heading{
     font-size: 50px;
-    color: var(--text-primary-color);
+    color: #fff;
     display: inline-block;
+}
+
+.view-parg{
+    color:#fff;
 }
 
 #view-span{
@@ -1228,6 +1232,10 @@ ul {
     color: var(--btn-bg-secondary-color);
     text-align: center;
     margin-bottom: 20px;
+}
+
+.read-parg{
+    color:#fff;
 }
 
 #readmore{
